@@ -9,15 +9,17 @@
   <style>
     /* Estilos do botão */
     #fullscreenBtn {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      background-color: #4CAF50;
+      position: absolute; /* Posição absoluta */
+      top: 20px;           /* Distância do topo */
+      right: 20px;         /* Distância da direita */
+      background-color: #006eff;
       color: white;
-      border: none;
+      border: 1px;
+      border-radius: 10px;
       padding: 10px 20px;
       font-size: 16px;
       cursor: pointer;
+      z-index: 10;         /* Coloca o botão acima do iframe */
     }
     #fullscreenBtn:hover {
       background-color: #45a049;
