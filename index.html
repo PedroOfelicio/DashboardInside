@@ -16,10 +16,12 @@
     const pages = ['x0iRF', 'p_pr0nw15fud'];
     const reportId = '754d3c3f-499c-4ea1-bb90-acd3e60bddd8';
     let index = 0;
+
     setInterval(() => {
       index = (index + 1) % pages.length;
       const frame = document.getElementById('lookerFrame');
-      frame.src = `https://lookerstudio.google.com/embed/reporting/${reportId}/page/${pages[index]}`;
+      // Adicionando um timestamp para garantir que a URL seja única
+      frame.src = `https://lookerstudio.google.com/embed/reporting/${reportId}/page/${pages[index]}?timestamp=${new Date().getTime()}`;
     }, 60000); // Troca a cada 60 segundos
   </script>
 </body>
