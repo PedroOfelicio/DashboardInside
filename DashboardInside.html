@@ -20,7 +20,7 @@
       index = (index + 1) % pages.length;
       const frame = document.getElementById('lookerFrame');
       frame.src = `https://lookerstudio.google.com/embed/reporting/${reportId}/page/${pages[index]}`;
-    }, 15000); // Troca a cada 10 segundos
+    }, 60000); // Troca a cada 10 segundos
   </script>
 </body>
 </html>
